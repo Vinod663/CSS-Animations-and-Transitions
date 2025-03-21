@@ -1,0 +1,42 @@
+*{
+    overflow: hidden;
+}
+section{
+    position: absolute;
+    width: 400vw;
+    height: 200vh;
+    display: flex;
+
+    animation-name: move-background;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    /*animation-timing-function: ease-in-out;*/
+     /* Stops at each keyframe */
+
+    /*animation-delay: 5s;*/
+}
+
+img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+
+
+}
+
+@keyframes move-background {
+    0%{
+        margin-left: 0;
+
+    }
+    33.33%{
+        margin-left: -100vw;
+    }
+    66.66%{
+        margin-left: -200vw;
+    }
+    100%{
+        margin-left: -300vw;
+    }
+}
