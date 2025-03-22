@@ -47,7 +47,17 @@ body{
 }
 
 .circle-1:hover {
-    transform: rotate(360deg);
+    animation-name: rotate;
+    animation-duration: 1s;
+}
+
+@keyframes rotate {
+    from{
+       transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 
